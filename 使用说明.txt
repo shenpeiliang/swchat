@@ -1,8 +1,0 @@
-阿里云添加安全组：
-tcp:9502
-
-服务器添加端口：
-firewall-cmd --permanent --add-port=9502/tcp
-
-启动服务器：
-php ws_server.php
