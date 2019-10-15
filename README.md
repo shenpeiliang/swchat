@@ -51,5 +51,4 @@ php ws_server.php  >>/dev/null &
 
 # 效果图
 
-！[窗口]（https://github.com/shenpeiliang/swchat/images/效果图.png）
-
+![image](https://github.com/shenpeiliang/swchat/blob/master/images/效果图.png）
