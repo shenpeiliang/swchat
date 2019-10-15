@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线聊天室</title>
+    <link href="css/chat.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="vendor/layer/layer.js"></script>
+    <script src="js/chat.js"></script>
+</head>
+<body>
+    <div class="container-main">
+        <div class="section-online">
+            <div class="section-mine">
+                <img class="avatar" src="images/avatar/6.jpg">
+                <span class="uname">匿名用户</span>
+            </div>
+            <ul class="online"></ul>
+        </div>
+        <div class="section-chat" data-id=0>
+            <div class="chat-title">
+                <h4>群发消息</h4>
+            </div>
+            <div class="chat-content">
+                <ul></ul>
+                <div class="chat-input">
+                    <div class="face-more"></div>
+                    <div class="tool">
+                        <i class="iconfont face-select">&#xf00f5;</i>
+                    </div>
+                    <textarea class="chat-txt"></textarea>
+                </div>
+                <div class="chat-submit">
+                    <button>发送消息（Enter）</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

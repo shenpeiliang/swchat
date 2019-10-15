@@ -1,0 +1,297 @@
+@charset "utf-8";
+/*字体font*/
+@font-face {
+    font-family: "iconfont";
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    color: #333;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    background: #f5f5f5 url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+/* CSS Document background:#f3f3f3;*/
+html,body{color:#454a57;font-family:"Microsoft YaHei", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;}
+body, div, p, a, ul,ol, li, dl, dt, dd, img, h1, h2, h3, h4, h5, h6, span, input, form, button, cite, strong, em, table, td, th, tr, i, em,textarea {
+    margin: 0;
+    padding: 0;
+}
+textarea{font-family: Arial;}
+ul{list-style:none}
+a,a:hover{text-decoration:none;color:#505050}
+img{border:none;}
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/*统一样式*/
+a, button, input, label, select {
+    -webkit-tap-highlight-color: transparent;
+}
+button, input, select, textarea {
+    outline: 0;
+    border-radius: 0;
+}
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+.clearfix{
+    clear: both;
+}
+
+.container-main{
+    margin: 20px auto;
+    width: 860px;
+    height: 660px;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+}
+.section-online{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:210px;
+    height: 100%;
+    background-color: #e6e5e5;
+    overflow: hidden;
+}
+.section-chat{
+    position: absolute;
+    left: 210px;
+    top: 0;
+    width: 650px;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.chat-container{
+    margin-top: 45px;
+}
+.chat-container .panel-heading{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.chat-container .panel-body{
+    border: 1px solid #e7e7e7;
+    padding: 0;
+}
+.online{
+    height: 580px;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #e7e7e7;
+    overflow-y: auto;
+}
+.avatar{
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor:  pointer;
+}
+
+.section-mine{
+    position: relative;
+    height: 80px;
+    background-color: #fff;
+}
+.section-mine .avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+.section-mine .uname{
+    display: block;
+    line-height: 24px;
+    height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    left: 70px;
+    top: 25px;
+    width: 130px;
+}
+
+.chat-title h4{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e7e7e7;
+    font-weight: bold;
+}
+.online li{
+    position: relative;
+    margin: 5px;
+    line-height: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.online li:hover, .online .active{
+    background-color: #F3F3F3;
+}
+.online .avatar{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.online .uname{
+    display: block;
+    width: 130px;
+    overflow: hidden;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 60px;
+    padding-left: 5px;
+    position: absolute;
+    left: 65px;
+    top: 0;
+    font-weight: bold;
+}
+.chat-content .notice{
+    clear: both;
+}
+.chat-content .notice p{
+    color: #999;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 18px;
+}
+.msg .msg-detail{
+    float:right;
+}
+.msg-receive .msg-detail{
+    float:left;
+}
+.msg-detail p{
+    background-color: #d9edf7;
+    line-height: 25px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.msg .msg-detail p img{
+    padding: 0 3px;
+}
+.msg-receive p{
+    background-color: #fff;
+}
+.chat-content ul{
+    padding: 15px;
+    height: 440px;
+    overflow-y: scroll;
+}
+.chat-content ul li{
+    margin: 5px 0 26px;
+}
+.chat-content .msg{
+    position: relative;
+}
+.chat-content .msg .msg-object{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.chat-content .msg-receive .msg-object{
+    left: 0;
+}
+.chat-content .msg .msg-content{
+    padding: 0 55px;
+}
+
+.chat-content .msg .msg-uname{
+    color:#999;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    text-align: right;
+}
+.chat-content .msg-receive .msg-uname{
+    text-align: left;
+}
+.chat-input{
+    position: relative;
+    background-color: #fff;
+}
+.face-more{
+    display: none;
+    position: absolute;
+    left: 0 ;
+    top: -208px;
+}
+.face-more ul{
+    width: 390px;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    overflow: hidden;
+    height: auto;
+}
+.face-more ul li {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #e8e8e8;
+    height: 22px;
+    width: 27px;
+    overflow: hidden;
+    margin: -1px 0 0 -1px;
+    padding: 4px 2px;
+    text-align: center;
+}
+.tool{
+    height: 35px;
+    line-height: 35px;
+}
+.tool .iconfont{
+    font-size: 24px;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+.chat-input textarea{
+    width: 630px;
+    height: 45px;
+    resize: none;
+    border: none;
+    line-height: 18px;
+    font-size: 14px;
+    padding: 10px;
+    color: inherit;
+}
+.chat-submit button{
+    width: 160px;
+    height: 44px;
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    padding: 0;
+    border: 0;
+    float: right;
+    cursor: pointer;
+}

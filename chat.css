@@ -1,0 +1,74 @@
+ul{
+  list-style: none;
+  padding: 0;
+}
+h3{
+    height: 45px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 45px;
+    border-bottom: 1px dashed #ccc;
+}
+a{text-decoration:none;color:#323232;}
+.section{    
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.list-user{
+    padding: 20px 10px;
+    width: 200px;
+    float: left;
+    overflow:hidden;
+    border: 1px solid #d7d7d7;
+}
+.list-user li a{
+    display:block;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28px;
+    color: #21841d;
+    height: 28px;
+    overflow: hidden;
+}
+.list-user li .active-send{
+    color:#ea5900;
+}
+.container{   
+    width: 726px;
+    padding: 20px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    margin-left: 10px;
+    display: inline;
+    overflow:hidden;
+}
+#content{
+    width: 100%;
+    height: 80px;
+    line-height: 21px;
+    font-size: 14px
+    margin-bottom: 5px;
+    padding: 5px 3px;
+    border: 1px solid #d7d7d7;
+}
+.btn{
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    background: none;
+    border-style: none;
+    border: 1px solid #d7d7d7;
+}
+#sms-container{
+    width:745px;
+    padding: 20px 0;
+    height:320px;
+    overflow-y:scroll;
+    padding-right:20px;
+}
+#sms-container dt span{padding-left: 15px;font-weight:bold; color: #ea5900;}
+#sms-container dd{line-height:35px;margin:0;word-wrap: break-word;    margin-bottom: 20px}
+#sms-container .user_send{color:#008080}
+#sms-container .from_server{text-align:right;color:#d14}
+#sms-container .message_header{color:#ccc}
